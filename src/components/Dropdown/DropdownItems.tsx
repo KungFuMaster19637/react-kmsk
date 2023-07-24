@@ -61,6 +61,10 @@ const DropdownItems = {
       title: "Links",
       path: "/links",
     },
+    {
+      title: "Historiek",
+      path: "/historiek",
+    },
   ],
   Jeugdschaak: [
     {

@@ -5,18 +5,23 @@ import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Bestuur from "./pages/Bestuur";
+import Inschrijven from "./pages/Inschrijven";
+import Verzekering from "./pages/Verzekering";
 
 function App() {
   return (
     <>
-      <NavBar />
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        {/* Contact: */}
-        <Route path="/bestuur" element={<Bestuur />} />
-      </Routes>
-      <p>Hello world</p>
+      <div className="app-container">
+        <NavBar />
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          {/* Contact: */}
+          <Route path="/bestuur" element={<Bestuur />} />
+          <Route path="/inschrijven" element={<Inschrijven />} />
+          <Route path="/verzekering" element={<Verzekering />} />
+        </Routes>
+      </div>
     </>
   );
 }

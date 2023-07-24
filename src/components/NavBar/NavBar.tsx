@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import Dropdown from "../Dropdown/Dropdown";
 import "./NavBar.css";
-import NavButton from "./NavButton";
 import DropdownItems from "../Dropdown/DropdownItems";
 
 function NavBar() {
@@ -34,20 +33,27 @@ function NavBar() {
 
   return (
     <nav className="navbar">
-      <Link to="/" className="logo">
-        <i className="fas fa-home" />
-        {/* <img src="src/assets/images/kmsk.jpg"></img> */}
+      <Link to="/home" className="logo">
+        {/* <i className="fas fa-home" /> */}
+        <img src="src/assets/images/kmsk.jpg" className="image-logo"></img>
       </Link>
+
+      {/* Navbar when small window */}
       <div className="menu-icon" onClick={changeClick}>
         <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
 
       {/* Navbar */}
       <ul className={click ? "nav-side-menu start" : "nav-side-menu"}>
+        <li className="nav-items">
+          <Link to="/home" className="nav-links">
+            Home
+          </Link>
+        </li>
         <li
           className="nav-items"
-          onMouseEnter={() => onMouseEnter("contact")}
-          onMouseLeave={() => onMouseLeave("contact")}
+          onMouseOver={() => onMouseEnter("contact")}
+          onMouseOut={() => onMouseLeave("contact")}
         >
           <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
             Contact
@@ -59,8 +65,8 @@ function NavBar() {
         </li>
         <li
           className="nav-items"
-          onMouseEnter={() => onMouseEnter("jeugdschaak")}
-          onMouseLeave={() => onMouseLeave("jeugdschaak")}
+          onMouseOver={() => onMouseEnter("jeugdschaak")}
+          onMouseOut={() => onMouseLeave("jeugdschaak")}
         >
           <Link to="/bestuur" className="nav-links" onClick={closeMobileMenu}>
             Jeugd
@@ -73,8 +79,8 @@ function NavBar() {
 
         <li
           className="nav-items"
-          onMouseEnter={() => onMouseEnter("toernooien")}
-          onMouseLeave={() => onMouseLeave("toernooien")}
+          onMouseOver={() => onMouseEnter("toernooien")}
+          onMouseOut={() => onMouseLeave("toernooien")}
         >
           <Link to="/home" className="nav-links" onClick={closeMobileMenu}>
             Toernooien
@@ -86,8 +92,8 @@ function NavBar() {
         </li>
         <li
           className="nav-items"
-          onMouseEnter={() => onMouseEnter("teamcompetitie")}
-          onMouseLeave={() => onMouseLeave("teamcompetitie")}
+          onMouseOver={() => onMouseEnter("teamcompetitie")}
+          onMouseOut={() => onMouseLeave("teamcompetitie")}
         >
           <Link to="/home" className="nav-links" onClick={closeMobileMenu}>
             Teamcompetitie
@@ -99,8 +105,8 @@ function NavBar() {
         </li>
         <li
           className="nav-items"
-          onMouseEnter={() => onMouseEnter("links")}
-          onMouseLeave={() => onMouseLeave("links")}
+          onMouseOver={() => onMouseEnter("links")}
+          onMouseOut={() => onMouseLeave("links")}
         >
           <Link to="/home" className="nav-links" onClick={closeMobileMenu}>
             Links
@@ -110,13 +116,7 @@ function NavBar() {
             )}
           </Link>
         </li>
-        <li className="nav-items">
-          <Link to="/historiek" className="nav-links" onClick={closeMobileMenu}>
-            Historiek
-          </Link>
-        </li>
       </ul>
-      {/* <NavButton /> */}
     </nav>
   );
 }

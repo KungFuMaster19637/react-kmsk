@@ -3,7 +3,7 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <div>
+      <div className="container">
         Wil jij ook schaken in een schaakclub? Kom eens langs bij de Koninklijke
         Mechelse Schaakkring. De clubavond gaat door elke vrijdag om 20 uur van
         september tot juni in het Busleyden Atheneum - Campus Pitzemburg.
