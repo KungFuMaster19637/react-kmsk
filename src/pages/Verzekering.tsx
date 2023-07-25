@@ -21,9 +21,7 @@ const Verzekering = () => {
           FAX: 02/512.70.94 Je kan overigens ook altijd met uw klachten terecht
           bij de Ombudsman van de verzekeringen: Meeussquare 35, 1000 Brussel
           Fax: 02/547.59.75.
-          <a href="mailto:Fax: 02/547.59.75 info@ombudsman.as">
-            info@ombudsman.as
-          </a>
+          <a href="mailto:info@ombudsman.as">info@ombudsman.as</a>
         </p>
       </div>
     </>

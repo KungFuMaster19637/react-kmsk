@@ -7,6 +7,8 @@ import About from "./pages/About";
 import Bestuur from "./pages/Bestuur";
 import Inschrijven from "./pages/Inschrijven";
 import Verzekering from "./pages/Verzekering";
+import Stapjestoernooi from "./pages/Stapjestoernooi";
+import Ligging from "./pages/Ligging";
 
 function App() {
   return (
@@ -15,11 +17,19 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
           {/* Contact: */}
           <Route path="/bestuur" element={<Bestuur />} />
+          <Route path="/ligging" element={<Ligging />} />
+
+          {/* Jeugd */}
           <Route path="/inschrijven" element={<Inschrijven />} />
           <Route path="/verzekering" element={<Verzekering />} />
+
+          {/* Toernooien */}
+          <Route path="/stapjestoernooi" element={<Stapjestoernooi />}></Route>
+          {/* Teamcompetitie */}
+
+          {/* Links */}
         </Routes>
       </div>
     </>

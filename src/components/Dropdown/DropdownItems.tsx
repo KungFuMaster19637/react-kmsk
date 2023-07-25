@@ -75,6 +75,10 @@ const DropdownItems = {
       title: "Verzekering",
       path: "/verzekering",
     },
+    {
+      title: "Jeugdkalender",
+      path: "/jeugdkalender",
+    },
   ],
 };
 

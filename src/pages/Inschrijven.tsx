@@ -3,7 +3,7 @@ import React from "react";
 const Inschrijven = () => {
   return (
     <>
-      <div className="background-image">
+      <div className="background-image-inschrijven">
         {/* <img
         src="src/assets/images/JeugdSchaak.jpeg"
         className="background-image"
