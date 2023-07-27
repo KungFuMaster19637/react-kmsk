@@ -144,24 +144,3 @@ td {
 }
 
 /* Jeugd */
-
-/* Inschrijven */
-
-.background-image-inschrijven {
-  position: relative;
-  z-index: -1;
-}
-
-.background-image-inschrijven::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("src/assets/images/JeugdSchaak.jpeg");
-  background-size: cover;
-  background-position: center;
-  filter: blur(5px);
-  z-index: -2;
-}
