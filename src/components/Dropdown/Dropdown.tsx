@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // import DropdownItems from "./DropdownItems";
 import "./Dropdown.css";
 
@@ -14,24 +14,24 @@ interface DropdownProps {
 
 const Dropdown = ({ dropdownItems }: DropdownProps) => {
   const [click, setClick] = useState(false);
+  const navigate = useNavigate();
 
-  const handleClick = () => setClick(!click);
+  const handleClick = (path: string) => {
+    setClick(false);
+    navigate(path);
+  };
 
   return (
     <div className="drop-selection">
       <ul
-        onClick={handleClick}
+        onClick={() => setClick(!click)}
         className={click ? "drop-menu" : "dropdown-menu"}
       >
         {dropdownItems.map((item, index) => (
           <li key={index}>
-            <Link
-              className="menu-items"
-              to={item.path}
-              onClick={() => setClick(false)}
-            >
+            <div className="menu-items" onClick={() => handleClick(item.path)}>
               {item.title}
-            </Link>
+            </div>
           </li>
         ))}
       </ul>

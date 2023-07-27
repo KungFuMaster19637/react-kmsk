@@ -33,10 +33,10 @@ function NavBar() {
 
   return (
     <nav className="navbar">
-      <Link to="/home" className="logo">
+      <a href="/home" className="logo">
         {/* <i className="fas fa-home" /> */}
         <img src="src/assets/images/kmsk.jpg" className="image-logo"></img>
-      </Link>
+      </a>
 
       {/* Navbar when small window */}
       <div className="menu-icon" onClick={changeClick}>
@@ -55,7 +55,7 @@ function NavBar() {
           onMouseOver={() => onMouseEnter("contact")}
           onMouseOut={() => onMouseLeave("contact")}
         >
-          <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+          <Link to="/bestuur" className="nav-links" onClick={closeMobileMenu}>
             Contact
             <i className="fas fa-caret-down" />
             {dropdownStates.contact && (
@@ -68,7 +68,7 @@ function NavBar() {
           onMouseOver={() => onMouseEnter("jeugdschaak")}
           onMouseOut={() => onMouseLeave("jeugdschaak")}
         >
-          <Link to="/bestuur" className="nav-links" onClick={closeMobileMenu}>
+          <Link to="/jeugd" className="nav-links" onClick={closeMobileMenu}>
             Jeugd
             <i className="fas fa-caret-down" />
             {dropdownStates.jeugdschaak && (
@@ -82,7 +82,11 @@ function NavBar() {
           onMouseOver={() => onMouseEnter("toernooien")}
           onMouseOut={() => onMouseLeave("toernooien")}
         >
-          <Link to="/home" className="nav-links" onClick={closeMobileMenu}>
+          <Link
+            to="/toernooien"
+            className="nav-links"
+            onClick={closeMobileMenu}
+          >
             Toernooien
             <i className="fas fa-caret-down" />
             {dropdownStates.toernooien && (
@@ -117,6 +121,13 @@ function NavBar() {
           </Link>
         </li>
       </ul>
+      <a
+        href="https://www.facebook.com/groups/742874852493936"
+        target="_blank"
+        className="facebook nav-links"
+      >
+        <img src="src/assets/images/facebook.png" width="30px"></img>
+      </a>
     </nav>
   );
 }

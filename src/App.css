@@ -1,10 +1,13 @@
 /* Algemeen */
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 :root {
   --main-color: #c61818;
+  --max-width-collapse: 1350px;
 }
 
 body {
+  font-family: "Poppins";
+  font-size: 18px;
   margin: 0;
   padding: 0;
 }
@@ -139,6 +142,8 @@ td {
     width: 80vw;
   }
 }
+
+/* Jeugd */
 
 /* Inschrijven */
 

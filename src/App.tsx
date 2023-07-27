@@ -3,12 +3,12 @@ import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
-import About from "./pages/About";
 import Bestuur from "./pages/Bestuur";
 import Inschrijven from "./pages/Inschrijven";
 import Verzekering from "./pages/Verzekering";
 import Stapjestoernooi from "./pages/Stapjestoernooi";
 import Ligging from "./pages/Ligging";
+import Jeugd from "./pages/Jeugd/Jeugd";
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
           <Route path="/ligging" element={<Ligging />} />
 
           {/* Jeugd */}
+          <Route path="/jeugd" element={<Jeugd />} />
           <Route path="/inschrijven" element={<Inschrijven />} />
           <Route path="/verzekering" element={<Verzekering />} />
 

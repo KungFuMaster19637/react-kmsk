@@ -54,10 +54,6 @@ const DropdownItems = {
       path: "/elo",
     },
     {
-      title: "Facebook",
-      path: "/facebook",
-    },
-    {
       title: "Links",
       path: "/links",
     },

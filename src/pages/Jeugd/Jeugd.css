@@ -1,0 +1,49 @@
+.hidden {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 1s ease, transform 0.5s ease-in;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.container-jeugd {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  margin: 5%;
+  padding: 5%;
+  color: white;
+  background-color: var(--main-color);
+}
+
+.subcontainer-jeugd {
+  display: flex;
+  margin: 2%;
+  max-width: 60%;
+  justify-content: center;
+}
+
+.subcontainer-jeugd h2 {
+  margin: 2% 0;
+}
+
+.image-jeugd {
+  margin: auto;
+  width: 50vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .container-jeugd {
+    flex-direction: column;
+  }
+
+  .subcontainer-jeugd {
+    display: flex;
+    margin: 5% 1%;
+    max-width: 100%;
+    justify-content: center;
+  }
+}
