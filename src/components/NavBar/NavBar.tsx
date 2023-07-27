@@ -46,7 +46,7 @@ function NavBar() {
       {/* Navbar */}
       <ul className={click ? "nav-side-menu start" : "nav-side-menu"}>
         <li className="nav-items">
-          <Link to="/home" className="nav-links">
+          <Link to="/home" className="nav-links nav-links-mobile">
             Home
           </Link>
         </li>
@@ -55,26 +55,30 @@ function NavBar() {
           onMouseOver={() => onMouseEnter("contact")}
           onMouseOut={() => onMouseLeave("contact")}
         >
-          <Link to="/bestuur" className="nav-links" onClick={closeMobileMenu}>
-            Contact
-            <i className="fas fa-caret-down" />
+          <div className="nav-links-mobile" onClick={closeMobileMenu}>
+            <Link to="/Bestuur" className="nav-links">
+              Contact
+              <i className="fas fa-caret-down" />
+            </Link>
             {dropdownStates.contact && (
               <Dropdown dropdownItems={DropdownItems.Contact} />
             )}
-          </Link>
+          </div>
         </li>
         <li
           className="nav-items"
           onMouseOver={() => onMouseEnter("jeugdschaak")}
           onMouseOut={() => onMouseLeave("jeugdschaak")}
         >
-          <Link to="/jeugd" className="nav-links" onClick={closeMobileMenu}>
-            Jeugd
-            <i className="fas fa-caret-down" />
+          <div className="nav-links-mobile" onClick={closeMobileMenu}>
+            <Link to="/Jeugd" className="nav-links">
+              Jeugd
+              <i className="fas fa-caret-down" />
+            </Link>
             {dropdownStates.jeugdschaak && (
               <Dropdown dropdownItems={DropdownItems.Jeugdschaak} />
             )}
-          </Link>
+          </div>
         </li>
 
         <li
@@ -82,43 +86,45 @@ function NavBar() {
           onMouseOver={() => onMouseEnter("toernooien")}
           onMouseOut={() => onMouseLeave("toernooien")}
         >
-          <Link
-            to="/toernooien"
-            className="nav-links"
-            onClick={closeMobileMenu}
-          >
-            Toernooien
-            <i className="fas fa-caret-down" />
+          <div className="nav-links-mobile" onClick={closeMobileMenu}>
+            <Link to="/toernooien" className="nav-links">
+              Toernooien
+              <i className="fas fa-caret-down" />
+            </Link>
             {dropdownStates.toernooien && (
               <Dropdown dropdownItems={DropdownItems.Toernooien} />
             )}
-          </Link>
+          </div>
         </li>
         <li
           className="nav-items"
           onMouseOver={() => onMouseEnter("teamcompetitie")}
           onMouseOut={() => onMouseLeave("teamcompetitie")}
         >
-          <Link to="/home" className="nav-links" onClick={closeMobileMenu}>
-            Teamcompetitie
-            <i className="fas fa-caret-down" />
+          <div className="nav-links-mobile" onClick={closeMobileMenu}>
+            <Link to="/teamcompetitie" className="nav-links">
+              Teamcompetitie
+              <i className="fas fa-caret-down" />
+            </Link>
             {dropdownStates.teamcompetitie && (
               <Dropdown dropdownItems={DropdownItems.Teamcompetitie} />
             )}
-          </Link>
+          </div>
         </li>
         <li
           className="nav-items"
           onMouseOver={() => onMouseEnter("links")}
           onMouseOut={() => onMouseLeave("links")}
         >
-          <Link to="/home" className="nav-links" onClick={closeMobileMenu}>
-            Links
-            <i className="fas fa-caret-down" />
+          <div className="nav-links-mobile" onClick={closeMobileMenu}>
+            <Link to="/links" className="nav-links">
+              Links
+              <i className="fas fa-caret-down" />
+            </Link>
             {dropdownStates.links && (
               <Dropdown dropdownItems={DropdownItems.Links} />
             )}
-          </Link>
+          </div>
         </li>
       </ul>
       <a

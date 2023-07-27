@@ -9,9 +9,7 @@
   transform: translateX(0);
 }
 
-.container-jeugd {
-  display: flex;
-  flex-direction: row;
+.container-inschrijven {
   border-radius: 5px;
   margin: 5%;
   padding: 5%;
@@ -19,46 +17,36 @@
   background-color: var(--main-color);
 }
 
-.subcontainer-jeugd {
-  display: flex;
-  margin: 2%;
-  max-width: 60%;
-  justify-content: center;
-}
-
-.subcontainer-jeugd h2 {
-  margin: 2% 0;
-}
-
-.image-jeugd {
+.image-inschrijven {
   margin: auto;
   width: 50vh;
 }
 
-.background-image-jeugd {
+.background-image-inschrijven {
   position: relative;
   z-index: -1;
 }
 
-.background-image-jeugd::before {
+.background-image-inschrijven::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("src/assets/images/ChessPatternVertical.png");
+  background-image: url("src/assets/images/JeugdSchaak.jpeg");
   background-size: cover;
   background-position: center;
+  filter: blur(5px);
   z-index: -2;
 }
 
 @media screen and (max-width: 1000px) {
-  .container-jeugd {
+  .container-inschrijven {
     flex-direction: column;
   }
 
-  .subcontainer-jeugd {
+  .subcontainer-inschrijven {
     display: flex;
     margin: 5% 1%;
     max-width: 100%;

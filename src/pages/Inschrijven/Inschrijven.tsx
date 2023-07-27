@@ -1,6 +1,10 @@
 import React from "react";
+import "./Inschrijven.css";
+import useScrollEffect from "../../ScrollEffect";
 
 const Inschrijven = () => {
+  useScrollEffect();
+
   return (
     <>
       <div className="background-image-inschrijven">
@@ -8,7 +12,7 @@ const Inschrijven = () => {
         src="src/assets/images/JeugdSchaak.jpeg"
         className="background-image"
       ></img> */}
-        <div className="container">
+        <div className="hidden container-inschrijven">
           <h2>Wie kan er zich inschrijven voor de jeugdlessen?</h2>
           <p>
             Iedereen die interesse heeft in schaken is welkom bij onze club,
@@ -18,7 +22,8 @@ const Inschrijven = () => {
             het 1e leerjaar leren ze immers lezen en dit is noodzakelijk omdat
             ze een werkboekje meekrijgen met oefeningen.
           </p>
-
+        </div>
+        <div className="hidden container-inschrijven">
           <h2>
             Hoeveel bedraagt het inschrijvingsgeld en wat is er inbegrepen?
           </h2>
@@ -37,7 +42,9 @@ const Inschrijven = () => {
             Wij zorgen ook voor de nodige aansluiting bij de Koninklijke
             Belgische Schaakbond indien dit nodig is voor externe competitie.
           </p>
+        </div>
 
+        <div className="hidden container-inschrijven">
           <h2>Hoe schrijf ik mijn zoon/dochter in?</h2>
           <p>
             Alles begint met een mail te sturen naar de jeugdverantwoordelijke{" "}
@@ -55,7 +62,9 @@ const Inschrijven = () => {
             verwachten we dan ook een definitieve beslissing en de betaling van
             het inschrijvingsgeld.
           </p>
+        </div>
 
+        <div className="hidden container-inschrijven">
           <h2>Wat gebeurt er als een groep volzet is?</h2>
           <p>
             Om de kwaliteit van de lessen te garanderen worden de groepen
@@ -74,7 +83,9 @@ const Inschrijven = () => {
             afgesproken worden wat het beste is om de periode tot het volgende
             seizoen te overbruggen.
           </p>
+        </div>
 
+        <div className="hidden container-inschrijven">
           <h2>Wat gebeurt er als de inschrijvingen al voorbij zijn?</h2>
           <p>
             Helaas sluiten wij na september onze inschrijvingen voor dat seizoen

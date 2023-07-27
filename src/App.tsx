@@ -1,16 +1,34 @@
-// import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import Home from "./pages/Home";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Router } from "react-router-dom";
 import Bestuur from "./pages/Bestuur";
-import Inschrijven from "./pages/Inschrijven";
+import Inschrijven from "./pages/Inschrijven/Inschrijven";
 import Verzekering from "./pages/Verzekering";
 import Stapjestoernooi from "./pages/Stapjestoernooi";
 import Ligging from "./pages/Ligging";
 import Jeugd from "./pages/Jeugd/Jeugd";
 
 function App() {
+  // scroll effect
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         entry.target.classList.add("show");
+  //       } else {
+  //         entry.target.classList.remove("show");
+  //       }
+  //     });
+  //   });
+
+  //   const hiddenElements = document.querySelectorAll(".hidden");
+  //   hiddenElements.forEach((el) => observer.observe(el));
+  //   return () => {
+  //     hiddenElements.forEach((el) => observer.unobserve(el));
+  //   };
+  // }, []);
   return (
     <>
       <div className="app-container">

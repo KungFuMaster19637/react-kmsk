@@ -18,6 +18,7 @@ const Dropdown = ({ dropdownItems }: DropdownProps) => {
 
   const handleClick = (path: string) => {
     setClick(false);
+    console.log(path);
     navigate(path);
   };
 
@@ -29,10 +30,27 @@ const Dropdown = ({ dropdownItems }: DropdownProps) => {
       >
         {dropdownItems.map((item, index) => (
           <li key={index}>
-            <div className="menu-items" onClick={() => handleClick(item.path)}>
-              {item.title}
-            </div>
+            {click ? ( // If dropdown is open, render a regular div
+              <div className="menu-items" onClick={() => setClick(false)}>
+                {item.title}
+              </div>
+            ) : (
+              // If dropdown is closed, render a Link component
+              <Link
+                className="menu-items"
+                to={item.path}
+                onClick={() => setClick(false)}
+              >
+                {item.title}
+              </Link>
+            )}
           </li>
+
+          // <li key={index}>
+          //   <Link to={item.path} className="menu-items">
+          //     {item.title}
+          //   </Link>
+          // </li>
         ))}
       </ul>
     </div>

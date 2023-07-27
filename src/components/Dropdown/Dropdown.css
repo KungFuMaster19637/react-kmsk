@@ -26,6 +26,8 @@
 
 .drop-selection {
   position: relative;
+  top: 100%; /* Position it below the navbar */
+  left: 0;
 }
 
 .menu-items {
