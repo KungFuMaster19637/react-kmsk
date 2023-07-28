@@ -64,31 +64,31 @@ body {
   background-color: #f1f1f1; /* Color of the scrollbar track on the vertical axis */
 }
 
-/* Bestuur */
+/* Tables */
 
-.container-bestuur {
+.container-table {
   border-radius: 5px;
   margin: 0%;
   padding: 5%;
 }
 
-.container-bestuur h2 {
+.container-table h2 {
   margin: 1% 0;
 }
 
-.table-bestuur {
+.table-kmsk {
   width: 100%;
   border-collapse: collapse;
   border: 1px solid #ccc;
 }
 
-.table-bestuur th,
+.table-kmsk th,
 td {
   padding: 10px;
   text-align: left;
 }
 
-.table-bestuur th {
+.table-kmsk th {
   background-color: #f2f2f2;
 }
 

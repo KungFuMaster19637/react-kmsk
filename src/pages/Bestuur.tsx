@@ -1,12 +1,12 @@
 import React from "react";
-import Bestuur_data from "../components/Bestuur_Data/Bestuur_Data";
+import Bestuur_data from "../components/Data/Bestuur_Data";
 
 const Bestuur = () => {
   return (
     <>
-      <div className="container-bestuur">
+      <div className="container-table">
         <h2>Bestuursleden</h2>
-        <table className="table-bestuur">
+        <table className="table-kmsk">
           <thead>
             <tr>
               <th>Rol</th>

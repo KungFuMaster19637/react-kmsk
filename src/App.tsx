@@ -9,6 +9,8 @@ import Verzekering from "./pages/Verzekering";
 import Stapjestoernooi from "./pages/Stapjestoernooi";
 import Ligging from "./pages/Ligging";
 import Jeugd from "./pages/Jeugd/Jeugd";
+import JeugdKalender from "./pages/JeugdKalender";
+import Lesgevers from "./pages/Lesgevers";
 
 function App() {
   // scroll effect
@@ -43,6 +45,8 @@ function App() {
           <Route path="/jeugd" element={<Jeugd />} />
           <Route path="/inschrijven" element={<Inschrijven />} />
           <Route path="/verzekering" element={<Verzekering />} />
+          <Route path="/jeugdkalender" element={<JeugdKalender />} />
+          <Route path="/lesgevers" element={<Lesgevers />} />
 
           {/* Toernooien */}
           <Route path="/stapjestoernooi" element={<Stapjestoernooi />}></Route>

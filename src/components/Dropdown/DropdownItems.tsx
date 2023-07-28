@@ -75,6 +75,10 @@ const DropdownItems = {
       title: "Jeugdkalender",
       path: "/jeugdkalender",
     },
+    {
+      title: "Lesgevers",
+      path: "/lesgevers",
+    },
   ],
 };
 

@@ -14,13 +14,6 @@ interface DropdownProps {
 
 const Dropdown = ({ dropdownItems }: DropdownProps) => {
   const [click, setClick] = useState(false);
-  const navigate = useNavigate();
-
-  const handleClick = (path: string) => {
-    setClick(false);
-    console.log(path);
-    navigate(path);
-  };
 
   return (
     <div className="drop-selection">
@@ -30,7 +23,10 @@ const Dropdown = ({ dropdownItems }: DropdownProps) => {
       >
         {dropdownItems.map((item, index) => (
           <li key={index}>
-            {click ? ( // If dropdown is open, render a regular div
+            <Link className="menu-items" to={item.path}>
+              {item.title}
+            </Link>
+            {/* {click ? ( // If dropdown is open, render a regular div
               <div className="menu-items" onClick={() => setClick(false)}>
                 {item.title}
               </div>
@@ -43,14 +39,8 @@ const Dropdown = ({ dropdownItems }: DropdownProps) => {
               >
                 {item.title}
               </Link>
-            )}
+            )} */}
           </li>
-
-          // <li key={index}>
-          //   <Link to={item.path} className="menu-items">
-          //     {item.title}
-          //   </Link>
-          // </li>
         ))}
       </ul>
     </div>
