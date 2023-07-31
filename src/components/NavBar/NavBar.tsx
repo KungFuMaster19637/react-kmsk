@@ -119,11 +119,7 @@ function NavBar() {
           <div className="nav-links-mobile" onClick={closeMobileMenu}>
             <Link to="/links" className="nav-links">
               Links
-              <i className="fas fa-caret-down" />
             </Link>
-            {dropdownStates.links && (
-              <Dropdown dropdownItems={DropdownItems.Links} />
-            )}
           </div>
         </li>
       </ul>

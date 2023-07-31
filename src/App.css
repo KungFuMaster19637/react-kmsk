@@ -134,6 +134,10 @@ td {
   height: auto;
 }
 
+/* Jeugd */
+
+/*Media query*/
+
 @media (max-width: 600px) {
   .container-ligging {
     flex-direction: column;
@@ -142,5 +146,3 @@ td {
     width: 80vw;
   }
 }
-
-/* Jeugd */

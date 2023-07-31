@@ -46,20 +46,9 @@ const DropdownItems = {
       title: "Zilveren Toren",
       path: "/zilverentoren",
     },
-  ],
-
-  Links: [
     {
-      title: "Elo",
-      path: "/elo",
-    },
-    {
-      title: "Links",
-      path: "/links",
-    },
-    {
-      title: "Historiek",
-      path: "/historiek",
+      title: "Kalender",
+      path: "/kalender",
     },
   ],
   Jeugdschaak: [

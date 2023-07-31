@@ -24,7 +24,7 @@
 
 .background-image-inschrijven {
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .background-image-inschrijven::before {
@@ -38,7 +38,7 @@
   background-size: cover;
   background-position: center;
   filter: blur(5px);
-  z-index: -2;
+  z-index: -1;
 }
 
 @media screen and (max-width: 1000px) {

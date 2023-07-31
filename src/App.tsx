@@ -11,26 +11,10 @@ import Ligging from "./pages/Ligging";
 import Jeugd from "./pages/Jeugd/Jeugd";
 import JeugdKalender from "./pages/JeugdKalender";
 import Lesgevers from "./pages/Lesgevers";
+import ZilverenToren from "./pages/ZilverenToren/ZilverenToren";
+import Kalender from "./pages/Kalender/Kalender";
 
 function App() {
-  // scroll effect
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         entry.target.classList.add("show");
-  //       } else {
-  //         entry.target.classList.remove("show");
-  //       }
-  //     });
-  //   });
-
-  //   const hiddenElements = document.querySelectorAll(".hidden");
-  //   hiddenElements.forEach((el) => observer.observe(el));
-  //   return () => {
-  //     hiddenElements.forEach((el) => observer.unobserve(el));
-  //   };
-  // }, []);
   return (
     <>
       <div className="app-container">
@@ -51,6 +35,9 @@ function App() {
           {/* Toernooien */}
           <Route path="/stapjestoernooi" element={<Stapjestoernooi />}></Route>
           {/* Teamcompetitie */}
+          <Route path="/zilverentoren" element={<ZilverenToren />}></Route>
+          <Route path="/interclub" element={<ZilverenToren />}></Route>
+          <Route path="/kalender" element={<Kalender />}></Route>
 
           {/* Links */}
         </Routes>
