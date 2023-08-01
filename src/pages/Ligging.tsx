@@ -27,17 +27,17 @@ const Ligging = () => {
         </div>
         <div className="subcontainer-ligging extra-ligging">
           <h2>Extra foto's</h2>
-          <img src="src/assets/images/Lokaal1.jpg"></img>
+          <img src="./assets/images/Lokaal1.jpg"></img>
           <p>Ingang bruul</p>
-          <img src="src/assets/images/Lokaal2.jpg"></img>
+          <img src="./assets/images/Lokaal2.jpg"></img>
           <p>
             Begin van de Bruul via de Vijfhoek met groene lichten voor vrije
             doorgang en vanaf 11 uur tot 18 uur : rode lichten en €55 boete voor
             wie toch doorrijdt.
           </p>
-          <img src="src/assets/images/Lokaal3.jpg"></img>
+          <img src="./assets/images/Lokaal3.jpg"></img>
           <p>Bruul 129 : Ingang van het Atheneum Pitzemburg vanop de Bruul</p>
-          <img src="src/assets/images/Lokaal4.jpg"></img>
+          <img src="./assets/images/Lokaal4.jpg"></img>
           <p>
             Zicht op de speelplaats van het Atheneum Pitzemburg met achteraan
             het gebouw met refter
@@ -52,7 +52,7 @@ const Ligging = () => {
             Op vrijdagavond en zondagmorgen voor 11u, toegang tot de
             speelplaats:
           </h3>
-          <img src="src/assets/images/Lokaal5.jpg"></img>
+          <img src="./assets/images/Lokaal5.jpg"></img>
           <p>
             Afrit Mechelen - Zuid ( afrit Nr.10 ) : aan het rond punt neem je
             richting Mechelen (over de viaduct). Je volgt de Tangent en gaat
@@ -67,7 +67,7 @@ const Ligging = () => {
           <hr></hr>
 
           <h3>Uit richting Leuven (via de Leuvensesteenweg):</h3>
-          <img src="src/assets/images/Lokaal6.jpg"></img>
+          <img src="./assets/images/Lokaal6.jpg"></img>
           <p>
             Komende van Leuven rijd je naar Mechelen via de Leuvensesteenweg en
             ga je aan de lichten rechtdoor naar de Hanswijkstraat. Op de
@@ -80,7 +80,7 @@ const Ligging = () => {
           <hr></hr>
 
           <h3>Op zondagnamiddag (Interclub):</h3>
-          <img src="src/assets/images/Lokaal7.jpg"></img>
+          <img src="./assets/images/Lokaal7.jpg"></img>
           <p>
             Voor de interclub op zondagnamiddag kan je best parkeren op de grote
             Randparking aan de Zandpoortvest. Op zon- en feestdagen is deze
