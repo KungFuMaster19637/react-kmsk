@@ -1,4 +1,3 @@
-import React from "react";
 import "./ZilverenToren.css";
 import useScrollEffect from "../../ScrollEffect";
 

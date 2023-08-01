@@ -1,4 +1,3 @@
-import React from "react";
 import Jeugdkalender_data from "../components/Data/Jeugdkalender_Data";
 
 const JeugdKalender = () => {

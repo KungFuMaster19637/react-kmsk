@@ -1,4 +1,3 @@
-import React from "react";
 import Bestuur_data from "../components/Data/Bestuur_Data";
 
 const Bestuur = () => {

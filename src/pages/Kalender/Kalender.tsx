@@ -1,4 +1,3 @@
-import React from "react";
 import Interclub_data from "../../components/Data/Interclub_Data";
 import ZilverenToren_data from "../../components/Data/ZilverenToren_Data";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import "./Inschrijven.css";
 import useScrollEffect from "../../ScrollEffect";
 

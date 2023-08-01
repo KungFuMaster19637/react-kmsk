@@ -1,4 +1,3 @@
-import React from "react";
 import Lesgevers_data from "../components/Data/Lesgevers_Data";
 
 const Lesgevers = () => {

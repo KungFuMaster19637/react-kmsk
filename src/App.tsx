@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import Home from "./pages/Home";
-import { Routes, Route, Router } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Bestuur from "./pages/Bestuur";
 import Inschrijven from "./pages/Inschrijven/Inschrijven";
 import Verzekering from "./pages/Verzekering";
