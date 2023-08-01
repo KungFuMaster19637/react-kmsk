@@ -26,7 +26,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("src/assets/images/ToernooiFoto.jpeg");
+  background-image: url("./assets/images/ToernooiFoto.jpeg");
   background-size: cover;
   background-position: center;
   filter: blur(5px);

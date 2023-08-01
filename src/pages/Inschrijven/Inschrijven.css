@@ -34,7 +34,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("src/assets/images/JeugdSchaak.jpeg");
+  background-image: url("./assets/images/JeugdSchaak.jpeg");
   background-size: cover;
   background-position: center;
   filter: blur(5px);

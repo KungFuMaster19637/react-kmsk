@@ -21,7 +21,7 @@ const Jeugd = () => {
           </div>
           <div className="subcontainer-jeugd">
             <img
-              src="src/assets/images/Teamwork.png"
+              src="./assets/images/Teamwork.png"
               className="image-jeugd"
             ></img>
           </div>
@@ -63,7 +63,7 @@ const Jeugd = () => {
           </div>
           <div className="subcontainer-jeugd">
             <img
-              src="src/assets/images/StappenBoeken.png"
+              src="./assets/images/StappenBoeken.png"
               className="image-jeugd"
             ></img>
           </div>
@@ -100,7 +100,7 @@ const Jeugd = () => {
           </div>
           <div className="subcontainer-jeugd">
             <img
-              src="src/assets/images/Clock10.gif"
+              src="./assets/images/Clock10.gif"
               className="image-jeugd"
             ></img>
           </div>
@@ -126,10 +126,7 @@ const Jeugd = () => {
             </div>
           </div>
           <div className="subcontainer-jeugd">
-            <img
-              src="src/assets/images/Examen.png"
-              className="image-jeugd"
-            ></img>
+            <img src="./assets/images/Examen.png" className="image-jeugd"></img>
           </div>
         </div>
 
@@ -188,10 +185,7 @@ const Jeugd = () => {
             </div>
           </div>
           <div className="subcontainer-jeugd">
-            <img
-              src="src/assets/images/Trofee.png"
-              className="image-jeugd"
-            ></img>
+            <img src="./assets/images/Trofee.png" className="image-jeugd"></img>
           </div>
         </div>
 
@@ -217,10 +211,7 @@ const Jeugd = () => {
             </div>
           </div>
           <div className="subcontainer-jeugd">
-            <img
-              src="src/assets/images/Thumb.png"
-              className="image-jeugd"
-            ></img>
+            <img src="./assets/images/Thumb.png" className="image-jeugd"></img>
           </div>
         </div>
       </div>
