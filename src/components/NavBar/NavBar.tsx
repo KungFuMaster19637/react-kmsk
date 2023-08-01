@@ -35,7 +35,7 @@ function NavBar() {
     <nav className="navbar">
       <a href="/home" className="logo">
         {/* <i className="fas fa-home" /> */}
-        <img src="/assets/images/kmsk.jpg" className="image-logo"></img>
+        <img src="./assets/images/kmsk.jpg" className="image-logo"></img>
       </a>
 
       {/* Navbar when small window */}
