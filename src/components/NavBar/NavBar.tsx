@@ -35,7 +35,10 @@ function NavBar() {
     <nav className="navbar">
       <a href="/home" className="logo">
         {/* <i className="fas fa-home" /> */}
-        <img src="./assets/images/kmsk.jpg" className="image-logo"></img>
+        <img
+          src="../public/assets/images/kmsk.jpg"
+          className="image-logo"
+        ></img>
       </a>
 
       {/* Navbar when small window */}
@@ -128,7 +131,7 @@ function NavBar() {
         target="_blank"
         className="facebook nav-links"
       >
-        <img src="src/assets/images/facebook.png" width="30px"></img>
+        <img src="./assets/images/facebook.png" width="30px"></img>
       </a>
     </nav>
   );
