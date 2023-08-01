@@ -12,6 +12,7 @@ import JeugdKalender from "./pages/JeugdKalender";
 import Lesgevers from "./pages/Lesgevers";
 import ZilverenToren from "./pages/ZilverenToren/ZilverenToren";
 import Kalender from "./pages/Kalender/Kalender";
+import Links from "./pages/Links/Links";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path="/kalender" element={<Kalender />}></Route>
 
           {/* Links */}
+          <Route path="/links" element={<Links />}></Route>
         </Routes>
       </div>
     </>

@@ -2,7 +2,7 @@ const Stapjestoernooi = () => {
   return (
     <>
       <div className="container">
-        <h1>Toernooi</h1>
+        <h1></h1>
       </div>
     </>
   );

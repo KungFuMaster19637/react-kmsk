@@ -1,7 +1,10 @@
+import useScrollEffect from "../ScrollEffect";
+
 const Verzekering = () => {
+  useScrollEffect();
   return (
     <>
-      <div className="container">
+      <div className="hidden container">
         <h2>Verzekering</h2>
         <p>
           Dit is de info gekregen van de VSF over de verzekeringspolis ARENA.

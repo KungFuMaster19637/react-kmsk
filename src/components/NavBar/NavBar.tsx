@@ -33,10 +33,10 @@ function NavBar() {
 
   return (
     <nav className="navbar">
-      <a href="/home" className="logo">
+      <Link to="/home" className="logo">
         {/* <i className="fas fa-home" /> */}
         <img src="./assets/images/kmsk.jpg" className="image-logo"></img>
-      </a>
+      </Link>
 
       {/* Navbar when small window */}
       <div className="menu-icon" onClick={changeClick}>

@@ -1,0 +1,14 @@
+.container-links {
+}
+
+.subcontainer-links {
+  border-radius: 5px;
+  margin: 5%;
+  padding: 5%;
+  color: white;
+  background-color: var(--main-color);
+}
+
+ul {
+  margin: 2% 0;
+}

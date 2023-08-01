@@ -26,20 +26,6 @@ const Dropdown = ({ dropdownItems }: DropdownProps) => {
             <Link className="menu-items" to={item.path}>
               {item.title}
             </Link>
-            {/* {click ? ( // If dropdown is open, render a regular div
-              <div className="menu-items" onClick={() => setClick(false)}>
-                {item.title}
-              </div>
-            ) : (
-              // If dropdown is closed, render a Link component
-              <Link
-                className="menu-items"
-                to={item.path}
-                onClick={() => setClick(false)}
-              >
-                {item.title}
-              </Link>
-            )} */}
           </li>
         ))}
       </ul>
