@@ -1,3 +1,18 @@
+.hidden {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 1s ease, transform 0.5s ease-in;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+ul {
+  margin: 2% 0;
+}
+
 .container-links {
 }
 
@@ -9,6 +24,21 @@
   background-color: var(--main-color);
 }
 
-ul {
-  margin: 2% 0;
+.background-image-links {
+  position: relative;
+  z-index: 0;
+}
+
+.background-image-links::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/ChessBackground2.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
 }
