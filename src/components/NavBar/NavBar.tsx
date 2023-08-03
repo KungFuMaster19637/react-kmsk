@@ -55,8 +55,12 @@ function NavBar() {
           onMouseOver={() => onMouseEnter("contact")}
           onMouseOut={() => onMouseLeave("contact")}
         >
-          <div className="nav-links-mobile" onClick={closeMobileMenu}>
-            <Link to="/Bestuur" className="nav-links">
+          <div>
+            <Link
+              to="/Bestuur"
+              className="nav-links nav-links-mobile"
+              onClick={closeMobileMenu}
+            >
               Contact
               <i className="fas fa-caret-down" />
             </Link>
