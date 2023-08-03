@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   height: auto;
+  width: 100%;
 }
 
 .container {
@@ -70,6 +71,7 @@ body {
   border-radius: 5px;
   margin: 0%;
   padding: 5%;
+  overflow: scroll;
 }
 
 .container-table h2 {
@@ -110,7 +112,7 @@ td {
 .subcontainer-ligging {
   flex: 1;
   height: 80vh;
-  min-width: 400px;
+  min-width: 40%;
   margin: 2% 1%;
   padding: 2%;
   color: white;
@@ -144,5 +146,10 @@ td {
   }
   .iframe-container {
     width: 80vw;
+  }
+  .table-kmsk {
+    max-width: calc(100vw - 2rem);
+    border-collapse: collapse;
+    border: 1px solid #ccc;
   }
 }

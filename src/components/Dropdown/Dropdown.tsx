@@ -10,9 +10,10 @@ interface DropdownItem {
 
 interface DropdownProps {
   dropdownItems: DropdownItem[];
+  closeNavbar: () => void;
 }
 
-const Dropdown = ({ dropdownItems }: DropdownProps) => {
+const Dropdown = ({ dropdownItems, closeNavbar }: DropdownProps) => {
   const [click, setClick] = useState(false);
 
   return (
@@ -23,7 +24,7 @@ const Dropdown = ({ dropdownItems }: DropdownProps) => {
       >
         {dropdownItems.map((item, index) => (
           <li key={index}>
-            <Link className="menu-items" to={item.path}>
+            <Link className="menu-items" to={item.path} onClick={closeNavbar}>
               {item.title}
             </Link>
           </li>

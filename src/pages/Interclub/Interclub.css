@@ -1,12 +1,10 @@
-/* Zilveren toren*/
-
 h1 {
   margin-top: 5%;
   color: white;
   text-align: center;
 }
 
-.container-zilverentoren {
+.container-interclub {
   border-radius: 5px;
   margin: 5%;
   padding: 5%;
@@ -14,13 +12,13 @@ h1 {
   background-color: var(--main-color);
 }
 
-.background-image-zilverentoren {
+.background-image-interclub {
   position: relative;
   overflow: hidden;
   z-index: 0;
 }
 
-.background-image-zilverentoren::before {
+.background-image-interclub::before {
   content: "";
   position: absolute;
   top: 0;

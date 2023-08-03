@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
 import Bestuur from "./pages/Bestuur";
 import Inschrijven from "./pages/Inschrijven/Inschrijven";
-import Verzekering from "./pages/Verzekering";
+import Verzekering from "./pages/Verzekering/Verzekering";
 import Stapjestoernooi from "./pages/Stapjestoernooi";
 import Ligging from "./pages/Ligging";
 import Jeugd from "./pages/Jeugd/Jeugd";
@@ -13,6 +13,7 @@ import Lesgevers from "./pages/Lesgevers";
 import ZilverenToren from "./pages/ZilverenToren/ZilverenToren";
 import Kalender from "./pages/Kalender/Kalender";
 import Links from "./pages/Links/Links";
+import Interclub from "./pages/Interclub/Interclub";
 
 function App() {
   return (
@@ -36,7 +37,7 @@ function App() {
           <Route path="/stapjestoernooi" element={<Stapjestoernooi />}></Route>
           {/* Teamcompetitie */}
           <Route path="/zilverentoren" element={<ZilverenToren />}></Route>
-          <Route path="/interclub" element={<ZilverenToren />}></Route>
+          <Route path="/interclub" element={<Interclub />}></Route>
           <Route path="/kalender" element={<Kalender />}></Route>
 
           {/* Links */}

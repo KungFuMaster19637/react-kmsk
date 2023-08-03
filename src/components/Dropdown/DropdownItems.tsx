@@ -8,6 +8,10 @@ const DropdownItems = {
       title: "Ligging",
       path: "/ligging",
     },
+    {
+      title: "Verzekering",
+      path: "/verzekering",
+    },
   ],
 
   Toernooien: [
@@ -53,12 +57,12 @@ const DropdownItems = {
   ],
   Jeugdschaak: [
     {
-      title: "Inschrijven",
-      path: "/inschrijven",
+      title: "Jeugdwerking",
+      path: "/jeugd",
     },
     {
-      title: "Verzekering",
-      path: "/verzekering",
+      title: "Inschrijven",
+      path: "/inschrijven",
     },
     {
       title: "Jeugdkalender",

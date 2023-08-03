@@ -4,8 +4,20 @@ import Dropdown from "../Dropdown/Dropdown";
 import "./NavBar.css";
 import DropdownItems from "../Dropdown/DropdownItems";
 
+interface DropdownStates {
+  contact: boolean;
+  jeugdschaak: boolean;
+  toernooien: boolean;
+  teamcompetitie: boolean;
+  links: boolean;
+}
+
+type NavItem = keyof DropdownStates;
+
 function NavBar() {
   const [click, setClick] = useState(false);
+  const changeClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
   const [dropdownStates, setDropdownStates] = useState({
     contact: false,
     jeugdschaak: false,
@@ -14,21 +26,43 @@ function NavBar() {
     links: false,
     // Add more dropdown states as needed for other nav elements
   });
-  const changeClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
 
-  const onMouseEnter = (navItem: string) => {
-    setDropdownStates((prevState) => ({
-      ...prevState,
-      [navItem]: true,
-    }));
+  //Closing and Opening navbar elements on mobile
+  const [prevNavItem, setPrevNavItem] = useState<NavItem | null>(null);
+
+  const handleNavItemClick = (navItem: NavItem) => {
+    if (prevNavItem && prevNavItem != navItem) {
+      setDropdownStates((prevState) => ({
+        ...prevState,
+        [prevNavItem]: false,
+      }));
+    }
+
+    if (window.innerWidth <= 960) {
+      setDropdownStates((prevState) => ({
+        ...prevState,
+        [navItem]: !prevState[navItem],
+      }));
+    }
+    setPrevNavItem(navItem);
   };
 
-  const onMouseLeave = (navItem: string) => {
-    setDropdownStates((prevState) => ({
-      ...prevState,
-      [navItem]: false,
-    }));
+  const onMouseEnter = (navItem: NavItem) => {
+    if (window.innerWidth > 960) {
+      setDropdownStates((prevState) => ({
+        ...prevState,
+        [navItem]: true,
+      }));
+    }
+  };
+
+  const onMouseLeave = (navItem: NavItem) => {
+    if (window.innerWidth > 960) {
+      setDropdownStates((prevState) => ({
+        ...prevState,
+        [navItem]: false,
+      }));
+    }
   };
 
   return (
@@ -46,26 +80,41 @@ function NavBar() {
       {/* Navbar */}
       <ul className={click ? "nav-side-menu start" : "nav-side-menu"}>
         <li className="nav-items">
-          <Link to="/home" className="nav-links nav-links-mobile">
-            Home
-          </Link>
+          <div className="nav-links-mobile-container" onClick={closeMobileMenu}>
+            <Link
+              to="/home"
+              className={
+                window.innerWidth > 960
+                  ? "nav-links"
+                  : "nav-links-mobile-dropdown"
+              }
+            >
+              Home
+            </Link>
+          </div>
         </li>
         <li
           className="nav-items"
           onMouseOver={() => onMouseEnter("contact")}
           onMouseOut={() => onMouseLeave("contact")}
+          onClick={() => handleNavItemClick("contact")}
         >
-          <div>
-            <Link
-              to="/Bestuur"
-              className="nav-links nav-links-mobile"
-              onClick={closeMobileMenu}
+          <div className="nav-links-mobile-container">
+            <a
+              className={
+                window.innerWidth > 960
+                  ? "nav-links"
+                  : "nav-links-mobile-dropdown"
+              }
             >
               Contact
               <i className="fas fa-caret-down" />
-            </Link>
+            </a>
             {dropdownStates.contact && (
-              <Dropdown dropdownItems={DropdownItems.Contact} />
+              <Dropdown
+                dropdownItems={DropdownItems.Contact}
+                closeNavbar={closeMobileMenu}
+              />
             )}
           </div>
         </li>
@@ -73,14 +122,24 @@ function NavBar() {
           className="nav-items"
           onMouseOver={() => onMouseEnter("jeugdschaak")}
           onMouseOut={() => onMouseLeave("jeugdschaak")}
+          onClick={() => handleNavItemClick("jeugdschaak")}
         >
-          <div className="nav-links-mobile" onClick={closeMobileMenu}>
-            <Link to="/Jeugd" className="nav-links">
+          <div className="nav-links-mobile-container">
+            <a
+              className={
+                window.innerWidth > 960
+                  ? "nav-links"
+                  : "nav-links-mobile-dropdown"
+              }
+            >
               Jeugd
               <i className="fas fa-caret-down" />
-            </Link>
+            </a>
             {dropdownStates.jeugdschaak && (
-              <Dropdown dropdownItems={DropdownItems.Jeugdschaak} />
+              <Dropdown
+                dropdownItems={DropdownItems.Jeugdschaak}
+                closeNavbar={closeMobileMenu}
+              />
             )}
           </div>
         </li>
@@ -89,14 +148,24 @@ function NavBar() {
           className="nav-items"
           onMouseOver={() => onMouseEnter("toernooien")}
           onMouseOut={() => onMouseLeave("toernooien")}
+          onClick={() => handleNavItemClick("toernooien")}
         >
-          <div className="nav-links-mobile" onClick={closeMobileMenu}>
-            <Link to="/toernooien" className="nav-links">
+          <div className="nav-links-mobile-container">
+            <a
+              className={
+                window.innerWidth > 960
+                  ? "nav-links"
+                  : "nav-links-mobile-dropdown"
+              }
+            >
               Toernooien
               <i className="fas fa-caret-down" />
-            </Link>
+            </a>
             {dropdownStates.toernooien && (
-              <Dropdown dropdownItems={DropdownItems.Toernooien} />
+              <Dropdown
+                dropdownItems={DropdownItems.Toernooien}
+                closeNavbar={closeMobileMenu}
+              />
             )}
           </div>
         </li>
@@ -104,24 +173,37 @@ function NavBar() {
           className="nav-items"
           onMouseOver={() => onMouseEnter("teamcompetitie")}
           onMouseOut={() => onMouseLeave("teamcompetitie")}
+          onClick={() => handleNavItemClick("teamcompetitie")}
         >
-          <div className="nav-links-mobile" onClick={closeMobileMenu}>
-            <Link to="/teamcompetitie" className="nav-links">
+          <div className="nav-links-mobile-container">
+            <a
+              className={
+                window.innerWidth > 960
+                  ? "nav-links"
+                  : "nav-links-mobile-dropdown"
+              }
+            >
               Teamcompetitie
               <i className="fas fa-caret-down" />
-            </Link>
+            </a>
             {dropdownStates.teamcompetitie && (
-              <Dropdown dropdownItems={DropdownItems.Teamcompetitie} />
+              <Dropdown
+                dropdownItems={DropdownItems.Teamcompetitie}
+                closeNavbar={closeMobileMenu}
+              />
             )}
           </div>
         </li>
-        <li
-          className="nav-items"
-          onMouseOver={() => onMouseEnter("links")}
-          onMouseOut={() => onMouseLeave("links")}
-        >
-          <div className="nav-links-mobile" onClick={closeMobileMenu}>
-            <Link to="/links" className="nav-links">
+        <li className="nav-items">
+          <div className="nav-links-mobile-container" onClick={closeMobileMenu}>
+            <Link
+              to="/links"
+              className={
+                window.innerWidth > 960
+                  ? "nav-links"
+                  : "nav-links-mobile-dropdown"
+              }
+            >
               Links
             </Link>
           </div>
