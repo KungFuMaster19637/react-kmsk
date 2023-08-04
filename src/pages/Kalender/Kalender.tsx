@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import TeamTable from "./TeamTable";
 import Interclub_data from "../../components/Data/Interclub_Data";
 import ZilverenToren_data from "../../components/Data/ZilverenToren_Data";
