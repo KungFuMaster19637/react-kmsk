@@ -1,48 +1,67 @@
-const Interclub_data = [
-  {
-    date: "13-1-2023",
-    club: "",
-  },
-  {
-    date: "17-1-2023",
-    club: "",
-  },
-  {
-    date: "20-1-2023",
-    club: "",
-  },
-  {
-    date: "19-11-2023",
-    club: "",
-  },
-  {
-    date: "3-12-2023",
-    club: "",
-  },
-  {
-    date: "28-1-2024",
-    club: "",
-  },
-  {
-    date: "4-2-2024",
-    club: "",
-  },
-  {
-    date: "18-2-2024",
-    club: "",
-  },
-  {
-    date: "10-3-2024",
-    club: "",
-  },
-  {
-    date: "24-3-2024",
-    club: "",
-  },
-  {
-    date: "21-4-2024",
-    club: "",
-  },
-];
+const Interclub_data = {
+  Dates: [
+    "13-1-2023",
+    "17-1-2023",
+    "20-1-2023",
+    "19-11-2023",
+    "3-12-2023",
+    "28-1-2024",
+    "4-2-2024",
+    "18-2-2024",
+    "10-3-2024",
+    "24-3-2024",
+    "21-4-2024",
+  ],
+  Teams: [
+    {
+      name: "Mechelen 1",
+      opponents: [
+        "KGRSL",
+        "TSM",
+        "Hoboken",
+        "Temse",
+        "Deurne",
+        "LSV",
+        "KOSK",
+        "Antwerpen",
+        "Opwijk",
+        "Brugge",
+        "Borgerhout",
+      ],
+    },
+    {
+      name: "Mechelen 2",
+      opponents: [
+        "Borgerhout",
+        "Brugge",
+        "Opwijk",
+        "Antwerpen",
+        "KOSK",
+        "LSV",
+        "Deurne",
+        "Temse",
+        "Hoboken",
+        "TSM",
+        "KGRSL",
+      ],
+    },
+    {
+      name: "Mechelen 3",
+      opponents: [
+        "Deurne",
+        "Temse",
+        "Hoboken",
+        "TSM",
+        "KGRSL",
+        "Borgerhout",
+        "Brugge",
+        "Opwijk",
+        "Antwerpen",
+        "KOSK",
+        "LSV",
+      ],
+    },
+  ],
+};
 
 export default Interclub_data;

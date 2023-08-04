@@ -1,0 +1,23 @@
+.button-team {
+  display: block;
+  position: relative;
+  background-color: var(--main-color);
+  font-family: "Poppins";
+  color: white;
+  height: 5vh;
+  margin: 2%;
+}
+
+.team-display {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  min-height: 20px;
+  background-color: lightgray;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    width: 100%; /* Make the buttons occupy the full width of the container */
+  }
+}

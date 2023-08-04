@@ -134,6 +134,10 @@ const Links_data = {
       name: "Stad Mechelen",
       link: "https://www.mechelen.be/",
     },
+    {
+      name: "ELO Belgische spelers",
+      link: "https://www.frbe-kbsb.be/sites/manager/GestionFICHES/FRBE_Fiche.php",
+    },
   ],
 };
 

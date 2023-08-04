@@ -26,6 +26,7 @@ ul {
 
 .background-image-links {
   position: relative;
+  overflow: hidden;
   z-index: 0;
 }
 
@@ -40,5 +41,6 @@ ul {
   background-size: cover;
   background-position: center;
   filter: blur(5px);
+  transform: scale(1.1);
   z-index: -1;
 }
