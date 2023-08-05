@@ -2,13 +2,13 @@ import React from "react";
 
 interface TeamTableProps {
   dates: string[];
-  teams: string[];
+  opponents: string[];
   selectedTeam: string | null;
 }
 
 const TeamTable: React.FC<TeamTableProps> = ({
   dates,
-  teams,
+  opponents,
   selectedTeam,
 }) => {
   return (
@@ -28,7 +28,7 @@ const TeamTable: React.FC<TeamTableProps> = ({
             <tr key={index}>
               <td>{index + 1}</td>
               <td>{date}</td>
-              <td>{teams[index]}</td>
+              <td>{opponents[index]}</td>
             </tr>
           ))}
         </tbody>
