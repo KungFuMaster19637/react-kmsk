@@ -71,6 +71,13 @@ function NavBar() {
         {/* <i className="fas fa-home" /> */}
         <img src="./assets/images/kmsk.jpg" className="image-logo"></img>
       </Link>
+      <a
+        href="https://www.facebook.com/groups/742874852493936"
+        target="_blank"
+        className="facebook nav-links"
+      >
+        <img src="./assets/images/facebook.png" width="30px"></img>
+      </a>
 
       {/* Navbar when small window */}
       <div className="menu-icon" onClick={changeClick}>
@@ -209,13 +216,9 @@ function NavBar() {
           </div>
         </li>
       </ul>
-      <a
-        href="https://www.facebook.com/groups/742874852493936"
-        target="_blank"
-        className="facebook nav-links"
-      >
-        <img src="./assets/images/facebook.png" width="30px"></img>
-      </a>
+      <Link to="/login" className="nav-links">
+        <img src="./assets/images/Profile.jpg" width="30px"></img>
+      </Link>
     </nav>
   );
 }

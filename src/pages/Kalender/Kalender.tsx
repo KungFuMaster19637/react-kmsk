@@ -3,6 +3,7 @@ import TeamTable from "./TeamTable";
 import Interclub_data from "../../components/Data/Interclub_Data";
 import ZilverenToren_data from "../../components/Data/ZilverenToren_Data";
 import "./Kalender.css";
+import { Link } from "react-router-dom";
 
 const Kalender = () => {
   //Interclub
@@ -55,7 +56,7 @@ const Kalender = () => {
             selectedTeam={selectedInterclubTeam.teamName}
           />
         )}
-        <a href="">Verslag Interclub </a>
+        <Link to="/verslagen">Verslag Interclub</Link>
       </div>
 
       <div className="container-table">
@@ -78,7 +79,7 @@ const Kalender = () => {
             selectedTeam={selectedZTTeam.teamName}
           />
         )}
-        <a href="">Verslag Zilveren Toren </a>
+        <Link to="/verslagen">Verslag Zilveren Toren </Link>
       </div>
     </>
   );

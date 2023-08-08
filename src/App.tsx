@@ -14,6 +14,8 @@ import ZilverenToren from "./pages/ZilverenToren/ZilverenToren";
 import Kalender from "./pages/Kalender/Kalender";
 import Links from "./pages/Links/Links";
 import Interclub from "./pages/Interclub/Interclub";
+import Login from "./pages/Login/Login";
+import Verslagen from "./pages/Verslagen/Verslagen";
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/home" element={<Home />} />
+          <Route path="/login" element={<Login />} />
           {/* Contact: */}
           <Route path="/bestuur" element={<Bestuur />} />
           <Route path="/ligging" element={<Ligging />} />
@@ -39,6 +42,7 @@ function App() {
           <Route path="/zilverentoren" element={<ZilverenToren />}></Route>
           <Route path="/interclub" element={<Interclub />}></Route>
           <Route path="/kalender" element={<Kalender />}></Route>
+          <Route path="/verslagen" element={<Verslagen />}></Route>
 
           {/* Links */}
           <Route path="/links" element={<Links />}></Route>
