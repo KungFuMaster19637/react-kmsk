@@ -1,0 +1,15 @@
+li {
+  list-style: none;
+}
+
+.subcontainer-blog {
+  background-color: var(--main-color);
+  color: white;
+  padding: 5%;
+  margin: 5%;
+}
+
+.subcontainer-blog h2 {
+  margin: 2% 0;
+  text-align: start;
+}

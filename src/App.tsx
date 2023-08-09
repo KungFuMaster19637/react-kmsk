@@ -15,7 +15,8 @@ import Kalender from "./pages/Kalender/Kalender";
 import Links from "./pages/Links/Links";
 import Interclub from "./pages/Interclub/Interclub";
 import Login from "./pages/Login/Login";
-import Verslagen from "./pages/Verslagen/Verslagen";
+import VerslagenZT from "./pages/Verslagen/VerslagenZT";
+import VerslagenIC from "./pages/Verslagen/VerslagenIC";
 
 function App() {
   return (
@@ -42,7 +43,8 @@ function App() {
           <Route path="/zilverentoren" element={<ZilverenToren />}></Route>
           <Route path="/interclub" element={<Interclub />}></Route>
           <Route path="/kalender" element={<Kalender />}></Route>
-          <Route path="/verslagen" element={<Verslagen />}></Route>
+          <Route path="/verslagenZT" element={<VerslagenZT />}></Route>
+          <Route path="/verslagenIC" element={<VerslagenIC />}></Route>
 
           {/* Links */}
           <Route path="/links" element={<Links />}></Route>

@@ -56,7 +56,7 @@ const Kalender = () => {
             selectedTeam={selectedInterclubTeam.teamName}
           />
         )}
-        <Link to="/verslagen">Verslag Interclub</Link>
+        <Link to="/verslagenIC">Verslag Interclub</Link>
       </div>
 
       <div className="container-table">
@@ -79,7 +79,7 @@ const Kalender = () => {
             selectedTeam={selectedZTTeam.teamName}
           />
         )}
-        <Link to="/verslagen">Verslag Zilveren Toren </Link>
+        <Link to="/verslagenZT">Verslag Zilveren Toren </Link>
       </div>
     </>
   );

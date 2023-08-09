@@ -132,11 +132,23 @@ td {
   overflow: auto;
 }
 
+.container-verslag {
+  border-radius: 5px;
+  padding: 5%;
+}
+
+.container-verslag h1 {
+  color: black;
+  text-align: center;
+  margin: 5%;
+}
+
+.container-verslag p {
+  white-space: pre-line;
+}
 .tips-ligging {
   height: auto;
 }
-
-/* Jeugd */
 
 /*Media query*/
 
