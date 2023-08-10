@@ -13,3 +13,29 @@ li {
   margin: 2% 0;
   text-align: start;
 }
+
+.subcontainer-blogform {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.subcontainer-blogform textarea {
+  height: 30vh;
+}
+
+.blogform-input {
+  max-width: 50%;
+  height: 3vh;
+}
+
+.submit-button {
+  display: block;
+  font-family: "Poppins";
+  margin: 3vh 0;
+  color: white;
+  background-color: #4caf50;
+  min-width: 10vw;
+  height: 5vh;
+  cursor: pointer;
+}

@@ -6,8 +6,8 @@ const BlogSection = ({ blogPosts }: { blogPosts: BlogPost[] }) => {
   useScrollEffect();
   return (
     <>
-      {blogPosts.map((post) => (
-        <div className="hidden subcontainer-blog">
+      {blogPosts.map((post, index) => (
+        <div className="hidden subcontainer-blog" key={index}>
           <h2>{post.title}</h2>
           <p>{post.content}</p>
         </div>

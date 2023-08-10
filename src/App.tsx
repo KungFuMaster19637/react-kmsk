@@ -17,6 +17,8 @@ import Interclub from "./pages/Interclub/Interclub";
 import Login from "./pages/Login/Login";
 import VerslagenZT from "./pages/Verslagen/VerslagenZT";
 import VerslagenIC from "./pages/Verslagen/VerslagenIC";
+import BlogForm from "./components/Blog/BlogForm";
+import VerslagForm from "./pages/Verslagen/VerslagForm";
 
 function App() {
   return (
@@ -45,6 +47,14 @@ function App() {
           <Route path="/kalender" element={<Kalender />}></Route>
           <Route path="/verslagenZT" element={<VerslagenZT />}></Route>
           <Route path="/verslagenIC" element={<VerslagenIC />}></Route>
+          <Route
+            path="/verslagFormZT"
+            element={<VerslagForm subject="ZilverenToren" />}
+          ></Route>
+          <Route
+            path="/verslagFormIC"
+            element={<VerslagForm subject="Interclub" />}
+          ></Route>
 
           {/* Links */}
           <Route path="/links" element={<Links />}></Route>

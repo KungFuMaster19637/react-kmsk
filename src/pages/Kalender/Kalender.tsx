@@ -56,7 +56,9 @@ const Kalender = () => {
             selectedTeam={selectedInterclubTeam.teamName}
           />
         )}
-        <Link to="/verslagenIC">Verslag Interclub</Link>
+        <Link to="/verslagenIC" onClick={() => window.scrollTo(0, 0)}>
+          Verslag Interclub
+        </Link>
       </div>
 
       <div className="container-table">
@@ -79,7 +81,9 @@ const Kalender = () => {
             selectedTeam={selectedZTTeam.teamName}
           />
         )}
-        <Link to="/verslagenZT">Verslag Zilveren Toren </Link>
+        <Link to="/verslagenZT" onClick={() => window.scrollTo(0, 0)}>
+          Verslag Zilveren Toren{" "}
+        </Link>
       </div>
     </>
   );

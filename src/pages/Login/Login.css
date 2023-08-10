@@ -1,9 +1,11 @@
 .login-button {
   display: block;
+  font-family: "Poppins";
 }
 
 .logout-button {
   display: block;
+  font-family: "Poppins";
   color: white;
   background-color: var(--main-color);
   min-width: 10vw;
@@ -36,6 +38,10 @@
   border-radius: 5px;
   padding: 5%;
   background-color: white;
+}
+
+.container-logout h2 {
+  color: black;
 }
 
 .login-form {

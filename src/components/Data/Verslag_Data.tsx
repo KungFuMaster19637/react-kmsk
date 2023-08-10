@@ -99,5 +99,22 @@ const Verslag_data = {
   ZilverenToren: ZilverenToren_Verslag_data,
   Interclub: Interclub_Verslag_data,
 };
+export const addBlogPost = (
+  subject: string,
+  title: string,
+  content: string
+) => {
+  // Find the correct array based on the subject
+  switch (subject) {
+    case "ZilverenToren":
+      ZilverenToren_Verslag_data.push({ title, content });
+      break;
+    case "Interclub":
+      Interclub_Verslag_data.push({ title, content });
+      break;
+    default:
+      break;
+  }
+};
 
 export default Verslag_data;

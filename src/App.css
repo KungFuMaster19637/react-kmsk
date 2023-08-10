@@ -109,6 +109,10 @@ td {
   margin: 2% 0;
 }
 
+.container label {
+  color: white;
+}
+
 .subcontainer-ligging {
   flex: 1;
   height: 80vh;
@@ -146,6 +150,11 @@ td {
 .container-verslag p {
   white-space: pre-line;
 }
+
+.verslag-link {
+  text-align: center;
+}
+
 .tips-ligging {
   height: auto;
 }
