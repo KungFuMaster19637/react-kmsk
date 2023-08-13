@@ -1,29 +1,43 @@
-import React, { useState } from "react";
-import { addBlogPost } from "../Data/Verslag_Data";
+import { useState } from "react";
+import { createData } from "../../services/zilverentoren_crud";
 
 const BlogForm = ({ subject }: { subject: string }) => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     // Call the addBlogPost function to add the new blog post
-    addBlogPost(subject, title, content);
-    setTitle("");
-    setContent("");
-    let subjectUrl = "";
-    switch (subject) {
-      case "Interclub":
-        subjectUrl = "IC";
-        break;
-      case "ZilverenToren":
-        subjectUrl = "ZT";
-        break;
-      default:
-        break;
+    try {
+      // Call the createData function to create a new blog post
+      const { createdData, error } = await createData({ title, content });
+
+      if (error) {
+        console.error("Error creating data:", error);
+        return;
+      }
+      console.log("New blog post created:", createData);
+      // Optionally reset the form fields here
+      setTitle("");
+      setContent("");
+    } catch (error) {
+      console.error("Error creating data:", error);
     }
-    // window.location.href = "/react-kmsk/verslagen" + subjectUrl;
   };
+  setTitle("");
+  setContent("");
+  let subjectUrl = "";
+  switch (subject) {
+    case "Interclub":
+      subjectUrl = "IC";
+      break;
+    case "ZilverenToren":
+      subjectUrl = "ZT";
+      break;
+    default:
+      break;
+  }
+  // window.location.href = "/react-kmsk/verslagen" + subjectUrl;
 
   return (
     <div>

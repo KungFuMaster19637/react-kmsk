@@ -17,7 +17,6 @@ import Interclub from "./pages/Interclub/Interclub";
 import Login from "./pages/Login/Login";
 import VerslagenZT from "./pages/Verslagen/VerslagenZT";
 import VerslagenIC from "./pages/Verslagen/VerslagenIC";
-import BlogForm from "./components/Blog/BlogForm";
 import VerslagForm from "./pages/Verslagen/VerslagForm";
 
 function App() {
