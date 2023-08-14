@@ -2,32 +2,41 @@ import supabase from "./supabase";
 import { BlogPost } from "../components/Data/Verslag_Data";
 
 // READ
-export async function fetchData() {
+export async function fetchZTData() {
   const { data, error } = await supabase
     .from("zilverentoren_verslag")
     .select("*");
   return { data, error };
 }
 
+export async function fetchZTDataByID(id: number) {
+  const { data, error } = await supabase
+    .from("zilverentoren_verslag")
+    .select("*")
+    .eq("id", id)
+    .single();
+  return { data, error };
+}
+
 // CREATE
-export async function createData(data: BlogPost) {
+export async function createZTData(title: string, content: string) {
   const { data: createdData, error } = await supabase
     .from("zilverentoren_verslag")
-    .insert([data]);
+    .insert([{ title, content }]);
   return { createdData, error };
 }
 
 // UPDATE
-export async function updateData(id: Number, newData: BlogPost) {
+export async function updateZTData(newData: BlogPost) {
   const { data, error } = await supabase
     .from("zilverentoren_verslag")
     .update(newData)
-    .eq("id", id);
+    .eq("id", newData.id);
   return { data, error };
 }
 
 // DELETE
-export async function deleteData(id: Number) {
+export async function deleteZTData(id: Number) {
   const { data, error } = await supabase
     .from("zilverentoren_verslag")
     .delete()

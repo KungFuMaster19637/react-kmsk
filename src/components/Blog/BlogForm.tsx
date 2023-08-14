@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { createData } from "../../services/zilverentoren_crud";
 
 const BlogForm = ({ subject }: { subject: string }) => {
   const [title, setTitle] = useState("");
@@ -8,21 +7,21 @@ const BlogForm = ({ subject }: { subject: string }) => {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     // Call the addBlogPost function to add the new blog post
-    try {
-      // Call the createData function to create a new blog post
-      const { createdData, error } = await createData({ title, content });
+    // try {
+    //   // Call the createData function to create a new blog post
+    //   const { createdData, error } = await createData({ title, content });
 
-      if (error) {
-        console.error("Error creating data:", error);
-        return;
-      }
-      console.log("New blog post created:", createData);
-      // Optionally reset the form fields here
-      setTitle("");
-      setContent("");
-    } catch (error) {
-      console.error("Error creating data:", error);
-    }
+    //   if (error) {
+    //     console.error("Error creating data:", error);
+    //     return;
+    //   }
+    //   console.log("New blog post created:", createData);
+    //   // Optionally reset the form fields here
+    //   setTitle("");
+    //   setContent("");
+    // } catch (error) {
+    //   console.error("Error creating data:", error);
+    // }
   };
   setTitle("");
   setContent("");

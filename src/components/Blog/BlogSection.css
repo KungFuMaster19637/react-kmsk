@@ -14,6 +14,10 @@ li {
   text-align: start;
 }
 
+.subcontainer-blog p {
+  white-space: pre-line;
+}
+
 .subcontainer-blogform {
   display: flex;
   flex-direction: column;
@@ -38,4 +42,38 @@ li {
   min-width: 10vw;
   height: 5vh;
   cursor: pointer;
+}
+
+.delete-container {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.delete-subcontainer {
+  border-radius: 5px;
+  margin: 5%;
+  padding: 5%;
+  color: white;
+  background-color: var(--main-color);
+}
+
+.delete-subcontainer-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  margin-bottom: 2%;
+}
+
+.crud-button {
+  display: block;
+  background-color: white;
+  cursor: pointer;
+  margin: 0 2%;
+  min-width: 200px;
+  height: auto;
+  font-family: "Poppins";
 }

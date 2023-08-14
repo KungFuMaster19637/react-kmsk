@@ -69,14 +69,14 @@ function NavBar() {
     <nav className="navbar">
       <Link to="/home" className="logo">
         {/* <i className="fas fa-home" /> */}
-        <img src="./assets/images/kmsk.jpg" className="image-logo"></img>
+        <img src="/assets/images/kmsk.jpg" className="image-logo"></img>
       </Link>
       <a
         href="https://www.facebook.com/groups/742874852493936"
         target="_blank"
         className="facebook nav-links"
       >
-        <img src="./assets/images/facebook.png" width="30px"></img>
+        <img src="/assets/images/facebook.png" width="30px"></img>
       </a>
 
       {/* Navbar when small window */}
@@ -217,7 +217,7 @@ function NavBar() {
         </li>
       </ul>
       <Link to="/login" className="nav-links">
-        <img src="./assets/images/Profile.jpg" width="30px"></img>
+        <img src="/assets/images/Profile.jpg" width="30px"></img>
       </Link>
     </nav>
   );

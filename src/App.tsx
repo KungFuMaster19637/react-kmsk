@@ -18,6 +18,7 @@ import Login from "./pages/Login/Login";
 import VerslagenZT from "./pages/Verslagen/VerslagenZT";
 import VerslagenIC from "./pages/Verslagen/VerslagenIC";
 import VerslagForm from "./pages/Verslagen/VerslagForm";
+import BlogDelete from "./components/Blog/BlogDelete";
 
 function App() {
   return (
@@ -47,12 +48,17 @@ function App() {
           <Route path="/verslagenZT" element={<VerslagenZT />}></Route>
           <Route path="/verslagenIC" element={<VerslagenIC />}></Route>
           <Route
-            path="/verslagFormZT"
-            element={<VerslagForm subject="ZilverenToren" />}
-          ></Route>
+            path="/verslagFormZT/:subject/:postId/:update"
+            element={<VerslagForm />}
+          />
           <Route
-            path="/verslagFormIC"
-            element={<VerslagForm subject="Interclub" />}
+            path="/verslagFormIC/:subject/:postId/:update"
+            element={<VerslagForm />}
+          />
+
+          <Route
+            path="/verslagDelete/:subject/:postId"
+            element={<BlogDelete />}
           ></Route>
 
           {/* Links */}
