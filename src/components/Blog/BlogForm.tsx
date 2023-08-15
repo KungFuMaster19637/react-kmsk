@@ -23,7 +23,7 @@ const BlogForm = () => {
   const [content, setContent] = useState<string | undefined>("");
 
   console.log(update);
-  const fetchedData = useEffect(() => {
+  useEffect(() => {
     const fetchData = async () => {
       if (update === "true") {
         const fetchedData =
@@ -49,7 +49,7 @@ const BlogForm = () => {
     try {
       // Call the createData function to create a new blog post
       if (update === "true") {
-        const { data, error } =
+        const { error } =
           selectedSubject === "Interclub"
             ? await updateICData({
                 id: Number(postId),
@@ -67,7 +67,7 @@ const BlogForm = () => {
           return;
         }
       } else {
-        const { createdData, error } =
+        const { error } =
           selectedSubject === "Interclub"
             ? await createICData(title!, content!)
             : await createZTData(title!, content!);
