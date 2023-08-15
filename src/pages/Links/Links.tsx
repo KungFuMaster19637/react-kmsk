@@ -12,7 +12,7 @@ const Links = () => {
           <ul>
             {Links_data.Blogs.map((item, index) => (
               <li key={index}>
-                <a href={item.link} target="_blank">
+                <a className="links-text" href={item.link} target="_blank">
                   {item.name}
                 </a>
               </li>
@@ -25,7 +25,7 @@ const Links = () => {
           <ul>
             {Links_data.Federaties.map((item, index) => (
               <li key={index}>
-                <a href={item.link} target="_blank">
+                <a className="links-text" href={item.link} target="_blank">
                   {item.name}
                 </a>
               </li>
@@ -38,7 +38,7 @@ const Links = () => {
           <ul>
             {Links_data.Internationaal.map((item, index) => (
               <li key={index}>
-                <a href={item.link} target="_blank">
+                <a className="links-text" href={item.link} target="_blank">
                   {item.name}
                 </a>
               </li>
@@ -51,7 +51,7 @@ const Links = () => {
           <ul>
             {Links_data.Clubs.map((item, index) => (
               <li key={index}>
-                <a href={item.link} target="_blank">
+                <a className="links-text" href={item.link} target="_blank">
                   {item.name}
                 </a>
               </li>
@@ -64,7 +64,7 @@ const Links = () => {
           <ul>
             {Links_data.Leren.map((item, index) => (
               <li key={index}>
-                <a href={item.link} target="_blank">
+                <a className="links-text" href={item.link} target="_blank">
                   {item.name}
                 </a>
               </li>
@@ -77,7 +77,7 @@ const Links = () => {
           <ul>
             {Links_data.Andere.map((item, index) => (
               <li key={index}>
-                <a href={item.link} target="_blank">
+                <a className="links-text" href={item.link} target="_blank">
                   {item.name}
                 </a>
               </li>

@@ -6,6 +6,7 @@ import {
 } from "../../services/zilverentoren_crud";
 import { useState, useEffect } from "react";
 import useAuth from "../../pages/Login/useAuth";
+import NotLoggedIn from "../../pages/Login/NotLoggedIn";
 
 const BlogDelete = () => {
   const { isLoggedIn } = useAuth();
@@ -66,23 +67,31 @@ const BlogDelete = () => {
 
   return (
     <>
-      <div className="delete-container">
-        <h2>Bent u zeker dat u deze post wilt verwijderen?</h2>
-      </div>
-      <div className="subcontainer-blog">
-        <h2>{title}</h2>
-        <p>{content}</p>
-      </div>
-      <div className="delete-subcontainer-buttons">
-        <button
-          className="crud-button"
-          onClick={() => handleDelete(Number(postId))}
-        >
-          Verwijder deze post
-        </button>
-        <button className="crud-button" onClick={backToPage}>
-          Ga terug naar verslagen
-        </button>
+      <div>
+        {isLoggedIn ? (
+          <div>
+            <div className="delete-container">
+              <h2>Bent u zeker dat u deze post wilt verwijderen?</h2>
+            </div>
+            <div className="delete-subcontainer-buttons">
+              <button
+                className="crud-button"
+                onClick={() => handleDelete(Number(postId))}
+              >
+                Verwijder deze post
+              </button>
+              <button className="crud-button" onClick={backToPage}>
+                Ga terug naar verslagen
+              </button>
+            </div>
+            <div className="subcontainer-blog">
+              <h2>{title}</h2>
+              <p>{content}</p>
+            </div>
+          </div>
+        ) : (
+          <NotLoggedIn />
+        )}
       </div>
     </>
   );

@@ -13,7 +13,17 @@ ul {
   margin: 2% 0;
 }
 
+.links-text {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.links-text:hover {
+  color: black;
+}
 .container-links {
+  color: white;
 }
 
 .subcontainer-links {
@@ -21,6 +31,7 @@ ul {
   margin: 5%;
   padding: 5%;
   color: white;
+  text-decoration: none;
   background-color: var(--main-color);
 }
 

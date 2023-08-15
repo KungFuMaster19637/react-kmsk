@@ -17,7 +17,7 @@ import Interclub from "./pages/Interclub/Interclub";
 import Login from "./pages/Login/Login";
 import VerslagenZT from "./pages/Verslagen/VerslagenZT";
 import VerslagenIC from "./pages/Verslagen/VerslagenIC";
-import VerslagForm from "./pages/Verslagen/VerslagForm";
+import BlogForm from "./components/Blog/BlogForm";
 import BlogDelete from "./components/Blog/BlogDelete";
 
 function App() {
@@ -49,11 +49,11 @@ function App() {
           <Route path="/verslagenIC" element={<VerslagenIC />}></Route>
           <Route
             path="/verslagFormZT/:subject/:postId/:update"
-            element={<VerslagForm />}
+            element={<BlogForm />}
           />
           <Route
             path="/verslagFormIC/:subject/:postId/:update"
-            element={<VerslagForm />}
+            element={<BlogForm />}
           />
 
           <Route

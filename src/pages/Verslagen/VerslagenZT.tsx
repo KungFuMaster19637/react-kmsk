@@ -25,7 +25,10 @@ const VerslagenZT = () => {
         <div className="verslag-link">
           <h1>Verslagen Zilveren Toren</h1>
           {isLoggedIn && (
-            <Link to="/verslagFormZT/${'ZilverenToren'}/${''}/${'false'}">
+            <Link
+              className="edit-button"
+              to="/verslagFormZT/ZilverenToren/${''}/${'false'}"
+            >
               Verslag invoeren
             </Link>
           )}

@@ -42,12 +42,18 @@ const BlogSection = ({
             {isLoggedIn && (
               <div>
                 <div>
-                  <Link to={`../verslagDelete/${subject}/${post.id}`}>
+                  <Link
+                    className="edit-button"
+                    to={`../verslagDelete/${subject}/${post.id}`}
+                  >
                     Verwijder post
                   </Link>
                 </div>
                 <div>
-                  <Link to={`${verslagURL}/${subject}/${post.id}/${"true"}`}>
+                  <Link
+                    className="edit-button"
+                    to={`${verslagURL}/${subject}/${post.id}/${"true"}`}
+                  >
                     Bewerk post
                   </Link>
                 </div>
