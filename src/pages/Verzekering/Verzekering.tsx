@@ -24,6 +24,7 @@ const Verzekering = () => {
             BRUSSEL TEL: 02/512.03.04 - FAX: 02/512.70.94 Je kan overigens ook
             altijd met uw klachten terecht bij de Ombudsman van de
             verzekeringen: Meeussquare 35, 1000 Brussel Fax: 02/547.59.75.
+            <br />
             <a href="mailto:info@ombudsman.as">info@ombudsman.as</a>
           </p>
         </div>

@@ -12,8 +12,9 @@ const VerslagenIC = () => {
   useEffect(() => {
     async function fetchDataFromSupabase() {
       const { data: fetchedData, error } = await fetchICData();
-      if (!error) {
-        setData(fetchedData as BlogPost[]);
+      if (!error && fetchedData) {
+        const sortedData = fetchedData?.sort((a, b) => a.id - b.id);
+        setData(sortedData!);
       }
     }
     fetchDataFromSupabase();
